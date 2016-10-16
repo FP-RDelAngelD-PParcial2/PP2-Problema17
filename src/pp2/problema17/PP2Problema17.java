@@ -52,6 +52,6 @@ public class PP2Problema17 {
                 divisor++;
             }
         }
-        System.out.print("El maximo comun denominador de " + a + " y " + b + " es: " + c);
+        System.out.print("El maximo comun denominador es: " + c);
     }
 }
