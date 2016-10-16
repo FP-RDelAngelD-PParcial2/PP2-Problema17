@@ -18,7 +18,7 @@ public class PP2Problema17 {
         int n1, n2;
         n1=verificarNumero("numero 1 ");
         n2=verificarNumero("numero 2 ");
-        
+        maximoComunD(n1, n2);
     }
     public static int solicitarDatos(String d){ //Solicita datos
         int miDato;
@@ -34,9 +34,24 @@ public class PP2Problema17 {
         }while(a<0);
         return a;
     }
-    public static int maximoComunD(int a, int b){
+    public static void maximoComunD(int a, int b){
+        int numeromenor, c, divisor;
+        c=1;
+        divisor=2;
         if(a>b){
-            
+            numeromenor=b;
+        }else{
+            numeromenor=a;
         }
+        while(numeromenor>=divisor){
+            if(a%divisor==0 && b%divisor==0){
+                a=a/divisor;
+                b=b/divisor;
+                c=c*divisor;
+            }else{
+                divisor++;
+            }
+        }
+        System.out.print("El maximo comun denominador de " + a + " y " + b + " es: " + c);
     }
 }
