@@ -28,22 +28,22 @@ public class PP2Problema17 {
         return miDato;
     }
     public static int verificarNumero(String d){
-        int a;
-        do{
+        int a; //Variable
+        do{ //Hacer que solicite datos y se guarden en a 
         a = solicitarDatos(d);
-        }while(a<0);
-        return a;
+        }while(a<=0);//Mientras que a sea menor o igual que 0
+        return a; //Regresa el valor de a
     }
     public static void maximoComunD(int a, int b){
-        int numeromenor, c, divisor;
-        c=1;
-        divisor=2;
-        if(a>b){
-            numeromenor=b;
+        int numeromenor, c, divisor; //Declaracion de variables
+        c=1; //Debe ser 1 ya que si es 0 se elimina el divisor
+        divisor=2; //Comienza en 2 ya que sino
+        if(a>b){ //Se necesita conocer el numero menor para saber en cuanto se puede dividir
+            numeromenor=b; //Si a es mayor que b, b es el numero menor
         }else{
-            numeromenor=a;
+            numeromenor=a; //Sino el numero menor es a
         }
-        while(numeromenor>=divisor){
+        while(numeromenor>=divisor){ //
             if(a%divisor==0 && b%divisor==0){
                 a=a/divisor;
                 b=b/divisor;
