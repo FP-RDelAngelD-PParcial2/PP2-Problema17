@@ -53,7 +53,7 @@ public class PP2Problema17 {
                 divisor++;
             }
         }
-        //Se imprime el maximo comun denominador //c=2
-        System.out.print("El maximo comun denominador es: " + c);
+        //Se imprime el maximo comun divisor //c=2
+        System.out.print("El maximo comun divisor es: " + c);
     }
 }
