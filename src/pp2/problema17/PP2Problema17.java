@@ -36,7 +36,7 @@ public class PP2Problema17 {
     }
     public static void maximoComunD(int a, int b){
         int numeromenor, c, divisor; //Declaracion de variables
-        c=1; //Debe ser 1 ya que si es 0 se elimina el divisor
+        c=1; //Debe ser 1 ya que si es 0 se elimina el divisor y si algun numero llega a ser 1 se imprime este
         divisor=2; //Comienza en 2 ya que es lo minimo en lo que se pueden dividir (media)
         if(a>b){ //Se necesita conocer el numero menor para saber en cuanto se puede dividir //2>8
             numeromenor=b; //Si a es mayor que b, b es el numero menor //FALSO
