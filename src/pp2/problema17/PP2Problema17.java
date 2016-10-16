@@ -15,7 +15,10 @@ public class PP2Problema17 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        solicitaNumero();
+        int n1, n2;
+        n1=verificarNumero("numero 1 ");
+        n2=verificarNumero("numero 2 ");
+        
     }
     public static int solicitarDatos(String d){ //Solicita datos
         int miDato;
@@ -24,12 +27,16 @@ public class PP2Problema17 {
         miDato= entradaEscaner.nextInt();
         return miDato;
     }
-    public static void solicitaNumero(){
-        int n1;
-        int n2;
+    public static int verificarNumero(String d){
+        int a;
         do{
-        n1 = solicitarDatos("numero 1 ");
-        n2 = solicitarDatos("numero 2 ");
-        }while(n1<0 || n2<0);
+        a = solicitarDatos(d);
+        }while(a<0);
+        return a;
+    }
+    public static int maximoComunD(int a, int b){
+        if(a>b){
+            
+        }
     }
 }
