@@ -43,9 +43,10 @@ public class PP2Problema17 {
         }else{
             numeromenor=a; //Sino el numero menor es a
         }
-        while(numeromenor>=divisor){ //
-            if(a%divisor==0 && b%divisor==0){
-                a=a/divisor;
+        while(numeromenor>=divisor){ //Mientras que el numero menor sea mayor o igual al divisor,
+            if(a%divisor==0 && b%divisor==0){ //Si el residuo de la division de a entre el divisor es 0
+                                              //Si el residuo de la division de b entre el divisor es 0
+                a=a/divisor; //a
                 b=b/divisor;
                 c=c*divisor;
             }else{
